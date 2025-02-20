@@ -34,7 +34,7 @@ const App = () => {
   }
 
   return (
-    <div className="bg-gray-800 max-h-auto h-62 p-5 my-10 m-w-full w-[48rem] mx-auto rounded-xl text-white shadow-xl overflow-hidden flex flex-col ">
+    <div className="bg-gray-500/25 backdrop-blur-xl max-h-auto h-62 p-5 my-20 m-w-full w-[48rem] mx-auto rounded-xl text-white shadow-xl overflow-hidden flex flex-col ">
 
       <h1 className="mx-auto mb-10 mt-2 text-3xl cursor-default font-semibold font-mono [text-shadow:_0_2px_4px_rgb(99_102_241_/_0.8)]" id="heading">Password generator</h1>
       <div className=" rounded-md mx-4 flex w-auto mb-2" name="password display with button">
@@ -43,10 +43,10 @@ const App = () => {
           className="bg-white px-4 p-3 h-12 italic text-xl text-black flex-1 mx-none rounded-l-md outline-none max-w-auto w- "
           value={password}
         />
-        <button className="bg-blue-500 px-2 rounded-r-md cursor-pointer w-18 text-lg" onClick={() => copy()}> Copy </button>
+        <button className="bg-blue-500 transition delay-100 hover:bg-blue-800 px-2 rounded-r-md cursor-pointer w-18 text-lg" onClick={() => copy()}> Copy </button>
       </div>
 
-      <div className="mt-5 flex justify-between mb">
+      <div className="mt-6.5 flex justify-between mb">
 
         <div className="flex items-center">
           <input
